@@ -22,4 +22,12 @@ public class Jump : MonoBehaviour {
 
         MyAnim.SetFloat("vVelocity", MyRigidBody.velocity.y);
 	}
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.gameObject.layer == LayerMask.NameToLayer("Enemy"))
+        {
+            Application.LoadLevel(Application.loadedLevel);
+        }
+    }
 }
