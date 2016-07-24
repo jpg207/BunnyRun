@@ -9,10 +9,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 430810}
   - 212: {fileID: 21293314}
-  - 114: {fileID: 11405822}
   - 61: {fileID: 6163816}
   - 61: {fileID: 6113054}
   - 61: {fileID: 6173214}
+  - 114: {fileID: 11454904}
   m_Layer: 8
   m_Name: Cactus
   m_TagString: Untagged
@@ -75,7 +75,7 @@ BoxCollider2D:
   m_Offset: {x: -0.37710667, y: -0.14464368}
   serializedVersion: 2
   m_Size: {x: 0.41578692, y: 0.73213893}
---- !u!114 &11405822
+--- !u!114 &11454904
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -83,10 +83,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 104930}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 046e9d9fffc98e14faa97d65bb1ab803, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b3cd407c329a7840ba918d25192f24c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 6
+  speed: 10
 --- !u!212 &21293314
 SpriteRenderer:
   m_ObjectHideFlags: 1
