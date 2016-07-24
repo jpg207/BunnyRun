@@ -11,9 +11,10 @@ public class Jump : MonoBehaviour {
     private Collider2D MyCollider;
     public Text ScoreText;
     private float StartTime;
+    private int JumpsLeft = 2;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         MyRigidBody = GetComponent<Rigidbody2D>();
         MyAnim = GetComponent<Animator>();
         MyCollider = GetComponent<Collider2D>();
@@ -26,9 +27,15 @@ public class Jump : MonoBehaviour {
         if (BunnyHurtTime == -1)
         {
 
-            if (Input.GetButtonUp("Jump"))
+            if (Input.GetButtonUp("Jump") && JumpsLeft > 0)
             {
+                if(MyRigidBody.velocity.y < 0)
+                {
+                    MyRigidBody.velocity = Vector2.zero;
+                }
+
                 MyRigidBody.AddForce(transform.up * BunnyJumpForce);
+                JumpsLeft--;
             }
 
             MyAnim.SetFloat("vVelocity", MyRigidBody.velocity.y);
@@ -62,6 +69,10 @@ public class Jump : MonoBehaviour {
             MyRigidBody.velocity = Vector2.zero;
             MyRigidBody.AddForce(transform.up * BunnyJumpForce);
             MyCollider.enabled = false;
+        }
+        else if (collision.collider.gameObject.layer == LayerMask.NameToLayer("Ground"))
+        {
+            JumpsLeft = 2;
         }
     }
 }
