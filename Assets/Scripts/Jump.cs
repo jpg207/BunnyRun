@@ -12,6 +12,10 @@ public class Jump : MonoBehaviour {
     public Text ScoreText;
     private float StartTime;
     private int JumpsLeft = 2;
+    public AudioSource JumpFX;
+    public AudioSource DeathFX;
+    public AudioSource BackgroundNorm;
+    public AudioSource BackgroundFast;
 
     // Use this for initialization
     void Start () {
@@ -36,10 +40,18 @@ public class Jump : MonoBehaviour {
 
                 MyRigidBody.AddForce(transform.up * BunnyJumpForce);
                 JumpsLeft--;
+
+                JumpFX.Play();
             }
 
             MyAnim.SetFloat("vVelocity", MyRigidBody.velocity.y);
             ScoreText.text = (Time.time - StartTime).ToString("0.0");
+
+            if (decimal.Parse(ScoreText.text) == 10)
+            {
+                BackgroundNorm.Stop();
+                BackgroundFast.Play(); 
+            }
         }
         else
         {
@@ -69,6 +81,8 @@ public class Jump : MonoBehaviour {
             MyRigidBody.velocity = Vector2.zero;
             MyRigidBody.AddForce(transform.up * BunnyJumpForce);
             MyCollider.enabled = false;
+
+            DeathFX.Play();
         }
         else if (collision.collider.gameObject.layer == LayerMask.NameToLayer("Ground"))
         {
