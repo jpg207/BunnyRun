@@ -1,0 +1,45 @@
+Initialize engine version: 5.3.5f1 (960ebf59018a)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 960M (ID=0x139b)
+    Vendor:   NVIDIA
+    VRAM:     3072 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\jpg20\Dropbox\NMIT\Semester 2\SDV602\BunnyRun\BunnyRun 0.0.3_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\jpg20\Dropbox\NMIT\Semester 2\SDV602\BunnyRun\BunnyRun 0.0.3_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\jpg20\Dropbox\NMIT\Semester 2\SDV602\BunnyRun\BunnyRun 0.0.3_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\jpg20\Dropbox\NMIT\Semester 2\SDV602\BunnyRun\BunnyRun 0.0.3_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\jpg20\Dropbox\NMIT\Semester 2\SDV602\BunnyRun\BunnyRun 0.0.3_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\jpg20\Dropbox\NMIT\Semester 2\SDV602\BunnyRun\BunnyRun 0.0.3_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\jpg20\Dropbox\NMIT\Semester 2\SDV602\BunnyRun\BunnyRun 0.0.3_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\jpg20\Dropbox\NMIT\Semester 2\SDV602\BunnyRun\BunnyRun 0.0.3_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.084 seconds
+Platform assembly: C:\Users\jpg20\Dropbox\NMIT\Semester 2\SDV602\BunnyRun\BunnyRun 0.0.3_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\jpg20\Dropbox\NMIT\Semester 2\SDV602\BunnyRun\BunnyRun 0.0.3_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.101431 ms
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 11.248588 ms
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 416.
+Total: 0.542419 ms (FindLiveObjects: 0.059259 ms CreateObjectMapping: 0.045827 ms MarkObjects: 0.410073 ms  DeleteObjects: 0.026074 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.442864 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 416.
+Total: 0.229925 ms (FindLiveObjects: 0.032790 ms CreateObjectMapping: 0.022518 ms MarkObjects: 0.169876 ms  DeleteObjects: 0.003555 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.450666 ms
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 424.
+Total: 0.632493 ms (FindLiveObjects: 0.054518 ms CreateObjectMapping: 0.041876 ms MarkObjects: 0.510419 ms  DeleteObjects: 0.024493 ms)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: bec -> priority: 1 
+  Thread -> id: 28c0 -> priority: 1 

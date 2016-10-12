@@ -28,10 +28,15 @@ public class Jump : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.LoadLevel("Title");
+        }
+
         if (BunnyHurtTime == -1)
         {
 
-            if (Input.GetButtonUp("Jump") && JumpsLeft > 0)
+            if ((Input.GetButtonUp("Jump") || Input.GetButtonUp("Fire1")) && JumpsLeft > 0)
             {
                 if(MyRigidBody.velocity.y < 0)
                 {
@@ -47,7 +52,7 @@ public class Jump : MonoBehaviour {
             MyAnim.SetFloat("vVelocity", MyRigidBody.velocity.y);
             ScoreText.text = (Time.time - StartTime).ToString("0.0");
 
-            if (decimal.Parse(ScoreText.text) == 10)
+            if (decimal.Parse(ScoreText.text) == 15)
             {
                 BackgroundNorm.Stop();
                 BackgroundFast.Play(); 
@@ -55,7 +60,7 @@ public class Jump : MonoBehaviour {
         }
         else
         {
-            if (Time.time > BunnyHurtTime + 2)
+            if (Time.time > BunnyHurtTime + 1.5)
             {
                 Application.LoadLevel(Application.loadedLevel);
             }
